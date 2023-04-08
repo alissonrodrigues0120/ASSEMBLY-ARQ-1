@@ -1,0 +1,24 @@
+1. 
+
+B) incorreto;
+D) correto;
+E) correto;
+
+2.
+
+B) grade byte 'B'
+
+D) amount sdword ?
+
+F) number sdword -396
+
+3.
+
+B) incorreto (o código certo está no github);
+D) correto;
+F) correto;
+G) incorreto (o código certo está no github);
+
+4. As respostas estão no github com nome de cada opção;
+
+5. As respostas estão no github com nome de cada opção;
