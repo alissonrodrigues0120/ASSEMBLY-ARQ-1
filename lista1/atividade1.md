@@ -1,7 +1,9 @@
 # questão 1 
 
 B) incorreto;
+
 D) correto;
+
 E) correto;
 
 # questão 2
@@ -23,8 +25,11 @@ number sdword -396
 # questão 3
 
 B) incorreto (o código certo está no github);
+
 D) correto;
+
 F) correto;
+
 G) incorreto (o código certo está no github);
 
 # questão 4
