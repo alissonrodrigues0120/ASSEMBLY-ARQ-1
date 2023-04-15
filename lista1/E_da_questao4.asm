@@ -2,6 +2,11 @@
 ;coloquei ce pra representar a variável c porque tava dando erro, provavelmente 
 ;por causa da biblioteca da linguagem c 
 
+;
+;   Building Instructions:
+;   ml /Cx /coff E_da_questao4.asm /link /SUBSYSTEM:console /out:E_da_questao4.exe kernel32.lib legacy_stdio_definitions.lib msvcrt.lib
+;
+
 includelib msvcrt.lib
 includelib legacy_stdio_definitions.lib
 
