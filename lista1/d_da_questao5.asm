@@ -1,5 +1,10 @@
 ;D da questão 5
 
+;
+;   Building Instructions:
+;   ml /Cx /coff d_da_questao5.asm /link /SUBSYSTEM:console /out:d_da_questao5.exe kernel32.lib legacy_stdio_definitions.lib msvcrt.lib
+;
+
 
 includelib msvcrt.lib
 includelib legacy_stdio_definitions.lib
