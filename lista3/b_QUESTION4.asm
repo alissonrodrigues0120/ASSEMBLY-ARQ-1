@@ -1,3 +1,9 @@
+;
+;   Building Instructions:
+;   ml /Cx /coff b_QUESTION4.asm /link /SUBSYSTEM:console /out:b_QUESTION4.exe kernel32.lib legacy_stdio_definitions.lib msvcrt.lib
+;
+
+
 .686
 .model flat, c
 .stack 100h
