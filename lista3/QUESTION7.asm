@@ -1,7 +1,7 @@
 ;
 ;   Building Instructions:
 ;   ml /Cx /coff QUESTION7.asm /link /SUBSYSTEM:console /out:QUESTION7.exe kernel32.lib legacy_stdio_definitions.lib msvcrt.lib
-;
+; Correção: 1,0
 
 
 .686

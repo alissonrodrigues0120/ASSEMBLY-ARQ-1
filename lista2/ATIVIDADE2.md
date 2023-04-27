@@ -1,4 +1,9 @@
+> Correção: 1,5. Cadê a questão 03?
+
 # questão 1
+
+> Correção: 0,5
+
 B) Incorreto. O correto é:
 
 ```asm
@@ -14,6 +19,9 @@ msg3fmt byte "%s%d" , 0Ah, 0
 ```
 
 # questão 2
+
+> Correção: 0,5
+
 Está errado porque está tentando passar o conteúdo do registrador eax, 
 que deveria ter o conteúdo da variável num1, para num2, porém, após usar a 
 diretiva INVOKE o registrador, o registrador encontra-se vazio.
@@ -28,6 +36,9 @@ mov num2, eax
 ```
 
 # questão 4
+
+> Correção: 0,5
+
 
 ```
 
