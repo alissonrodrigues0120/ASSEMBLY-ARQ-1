@@ -84,7 +84,7 @@ else
      .endif
      .endif
      .endif
-     ```
+ ```
 
 # Questão 3
 Converter a seguinte estrutura de seleção em C para um correspondente segmento de código de linguagem Assembly. Não use as diretivas MASM, mas em vez disso use apenas comparadores , jumps e os apropriados rótulos (dica: no problema B, use as regras de De Morgan):
