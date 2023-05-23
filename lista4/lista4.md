@@ -179,7 +179,7 @@ endif01: nop
 Dado o exemplo da estrutura if-then-else-if abordado no problema 2, re-implemente isso usando estrutura if-then-if aninhado.
 
 ## Opção a
-Use as diretivas MASM
+Use as diretivas MASM.
 ### Resposta:
 ```asm
 mov eax,a
@@ -206,7 +206,7 @@ mov eax,a
       .endif
 ```
 ## Opção b
-Não use diretivas MASM, mas em vez disso use comparadores, jumps, e os rótulos apropriados
+Não use diretivas MASM, mas em vez disso use comparadores, jumps, e os rótulos apropriados.
 
 ### Resposta:
 
