@@ -175,4 +175,77 @@ endif01: nop
 
 ```
 
+# Questão 4
+Dado o exemplo da estrutura if-then-else-if abordado no problema 2, re-implemente isso usando estrutura if-then-if aninhado.
+
+## Opção a
+Use as diretivas MASM
+### Resposta:
+```asm
+mov eax,a
+      .if(eax <= b)
+      mov eax,b
+      .if (eax < ce)
+      mov eax,ce
+      .if(eax <= d)
+      mov eax,d
+      mov d,2
+      cdq
+      idiv d
+      mov d,eax
+      .ELSE
+      mov eax,ce
+      add eax,d
+      mov ce,eax
+      .endif
+      .ELSE
+      sub b,2
+      .endif
+      .ELSE
+      sub a,1
+      .endif
+```
+## Opção b
+Não use diretivas MASM, mas em vez disso use comparadores, jumps, e os rótulos apropriados
+
+### Resposta:
+
+```asm
+mov eax,a
+if01: cmp eax,b
+      jle if02
+      jmp else01
+
+else01: sub a,1
+        jmp endif00
+
+if02: mov eax,b
+      cmp eax,ce
+      jl if03
+      jmp else02
+
+else02: sub b,2
+        jmp endif00
+
+if03: mov eax,ce
+      cmp eax,d
+      jg else03
+      mov eax,d
+      mov d,2
+      cdq
+      idiv d
+      mov d,eax
+      jmp endif00
+
+else03: mov eax,ce
+        add eax,d
+        mov ce,eax
+
+endif00: nop
+
+```
+
+
+
+
 
