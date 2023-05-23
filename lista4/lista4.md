@@ -244,8 +244,42 @@ else03: mov eax,ce
 endif00: nop
 
 ```
+# Questão 5
+Implemente a seguinte declaração do switch C, que não tem um padrão de declaração, usando comparadores, jumps, e rótulos apropriados. Se number não estiver contido de 0 a 3, então o valor de count não deve mudar
 
+```c
+switch number {
+      case 0: 
+      case 1: count = count +2; 
+              break; 
+      case 2: 
+      case 3: count = count - 2; 
+}
+```
 
+### Resposta:
 
+```asm
+switch: cmp number,0
+        je case0
+        cmp number,1
+        je case1
+        cmp number,2
+        je case2
+        cmp number,3
+        je case3
+        jmp break00
 
+case0: jmp break00
+
+case1: add count,2
+       jmp break00
+
+case2: jmp break00
+
+case3: sub count,2
+       jmp break00
+
+break00: nop
+```
 
