@@ -141,3 +141,114 @@ repeat01: nop
 endw00:   mov i, ecx
 endif01:  nop
 ```
+
+# Questão 5
+Implemente a divisão sem sinal (similar à instrução div) usando subtração repetitiva, com sua escolha (ou escolha do seu instrutor) de qualquer dos seguintes (começar com o dividendo em eax e o divisor em ebx, então o lugar do quociente em eax e o resto em edx. Nota: Não cuide com relação a divisão por zero ou números negativos):
+
+## Opção a
+```asm
+.while
+```
+### Resposta:
+
+```asm
+mov edx,eax
+mov eax,0 
+.while(edx >= ebx) 
+sub edx, ebx
+inc eax 
+.endw
+```
+
+## Opção b
+```asm
+.repeat - .until
+```
+### Resposta:
+```asm
+mov edx, eax 
+mov eax, 0
+.repeat
+sub edx, ebx
+inc eax
+.until (edx < ebx)
+```
+
+## Opção c
+```asm
+.repeat - .untilcxz  
+```
+### Resposta:
+```asm
+     mov edx, eax
+     mov eax, 0
+     mov ecx, ebx
+     .repeat
+     .if(edx>=ebx)
+     sub edx, ebx
+     inc eax
+     .endif
+     .untilcxz
+```
+
+# Questão 6
+Implemente o seguinte segmento em C usando as diretivas .repeat e .untilcxz. E se o valor de n for 0 ou negativo? Seu segmento de código ainda funciona apropriadamente? Como esse problema pode ser corrigido? 
+
+```c
+sum 0;
+for (i 1; i< n; i++)
+    sum sum + i;
+```
+
+### Resposta:
+```asm
+     mov sum, 0
+     mov ecx, n
+     .repeat
+     mov eax, sum
+     add eax, i
+     mov sum, eax
+     .untilcxz
+```
+Quando for 0, o loop não funcionará e sum irá ficar igual a zero;
+
+Quando for negativo, irá executar o loop mas o resultado de sum ficará negativo.
+
+
+# Questão 7
+Implemente o seguinte loop do-while primeiro usando as diretivas .repeat - .until, e em seguida, usando apenas comparadores, condicionais e jumps incondicionais:
+
+```c
+i=10;
+sum 0;
+do {
+    sum sum+i;
+    i=i-2;
+} while i>0;
+```
+
+### Resposta:
+Diretivas .repeat - .until:
+```asm
+mov i, 10
+mov sum, 0
+.repeat 
+mov eax, sum
+add eax, i
+sub i, 2
+.until i <= 0
+```
+
+Usando comparadores, condicionais e jumps incondicionais:
+
+```asm
+      mov i, 10
+      mov sum, 0
+do01: nop
+      mov eax, sum
+      add eax, i
+      sub i, 2
+      cmp i, 0
+      jg do01
+endw01: nop
+```
