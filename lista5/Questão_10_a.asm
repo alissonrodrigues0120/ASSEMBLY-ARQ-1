@@ -47,27 +47,6 @@ main proc
 
      mov n, eax
 
-
-
-     ;mov ecx, 0
-     ;mov edx, 0
-     ;.while(ecx<=n)
-     ;.if(ecx==0)
-     ;mov eax, 0
-     ;.endif
-     ;.if(ecx==1)
-     ;mov ebx, 1
-     ;mov edx, 1
-     ;.endif
-     ;mov edx, 0
-     ;add edx, eax
-     ;add edx, ebx
-    ; mov eax, ebx
-     ;mov ebx, edx
-     ;.endw
-
-     ;mov n, edx
-
      INVOKE printf, ADDR msgfmt2, ADDR msg1, n
      ret
 main endp
