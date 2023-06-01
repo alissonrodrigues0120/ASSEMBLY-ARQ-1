@@ -121,3 +121,23 @@ endwhile06: nop
 
 ### Resposta:
 nenhuma vez.
+
+# Questão 4
+Implemente as diretivas .repeat e .until no final da seção 5.2 usando apenas instruções de comparar e jump, juntamente com os nomes dos rótulos apropriados.
+
+### Resposta:
+```asm
+ mov ans, 0
+if01:  cmp y, 0
+       je endif01
+       mov ecx, 1
+repeat01: nop
+          mov eax, ans
+          add eax, x
+          mov ans, eax
+          inc ecx
+          cmp ecx, y
+          jle repeat01
+endw00:   mov i, ecx
+endif01:  nop
+```
