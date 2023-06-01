@@ -271,3 +271,138 @@ endw02: nop
      loop do01
 endw01: nop
 ```
+
+# Questão 9
+Dada a função fatorial (n!) definida interativamente como segue:
+
+Se n=0 ou n=1, então 1
+
+Se n=2, então 1*2 = 2
+
+Se n=3, então 1*2*3 = 6
+
+Se n=4, então 1*2*3*4 = 24
+
+etc.
+
+Implemente a função acima interativamente com sua escolha (ou a escolha de seu instrutor) dos quaisquer seguintes:
+
+## Opção a
+```asm
+.while
+```
+
+### Resposta:
+```asm
+.686
+.model flat, c
+.stack 100h
+
+scanf PROTO arg2:Ptr Byte, inputlist:VARARG
+printf PROTO arg1:Ptr Byte, printlist:VARARG
+
+.data
+n sdword ?
+msgfmt byte "%s", 0Ah, 0
+msg1 byte "valor de n: ", 0
+msgfmt2 byte "%s%d", 0Ah, 0
+msginput byte "%d", 0
+
+.code
+main proc
+     INVOKE printf, ADDR msgfmt, ADDR msg1
+     INVOKE scanf, ADDR msginput, ADDR n
+     mov eax, 1
+     .while (n!=0)
+     imul n
+     dec n
+     .endw
+     mov n, eax
+
+     INVOKE printf, ADDR msgfmt2, ADDR msg1, n
+     ret
+main endp
+     end
+
+```
+
+## Opção b
+```asm
+.repeat - .until
+```
+
+### Resposta:
+```asm
+.686
+.model flat, c
+.stack 100h
+
+scanf PROTO arg2:Ptr Byte, inputlist:VARARG
+printf PROTO arg1:Ptr Byte, printlist:VARARG
+
+.data
+n sdword ?
+msgfmt byte "%s", 0Ah, 0
+msg1 byte "valor de n: ", 0
+msgfmt2 byte "%s%d", 0Ah, 0
+msginput byte "%d", 0
+
+.code
+main proc
+     INVOKE printf, ADDR msgfmt, ADDR msg1
+     INVOKE scanf, ADDR msginput, ADDR n
+     mov eax, 1
+     .repeat
+     imul n
+     dec n
+     .until(n==0)
+     mov n, eax
+
+     INVOKE printf, ADDR msgfmt2, ADDR msg1, n
+     ret
+main endp
+     end
+
+```
+## Opção c
+```asm
+.repeat - .untilcxz
+```
+
+### Resposta:
+
+```asm
+.686
+.model flat, c
+.stack 100h
+
+scanf PROTO arg2:Ptr Byte, inputlist:VARARG
+printf PROTO arg1:Ptr Byte, printlist:VARARG
+
+.data
+n sdword ?
+msgfmt byte "%s", 0Ah, 0
+msg1 byte "valor de n: ", 0
+msgfmt2 byte "%s%d", 0Ah, 0
+msginput byte "%d", 0
+
+.code
+main proc
+     INVOKE printf, ADDR msgfmt, ADDR msg1
+     INVOKE scanf, ADDR msginput, ADDR n
+     mov eax, 1
+     mov ecx, n
+     .repeat
+     imul n
+     dec n
+     .untilcxz
+     mov n, eax
+
+     INVOKE printf, ADDR msgfmt2, ADDR msg1, n
+     ret
+main endp
+     end
+
+```
+
+# Questão 10
