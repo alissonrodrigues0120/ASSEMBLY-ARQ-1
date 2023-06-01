@@ -406,3 +406,29 @@ main endp
 ```
 
 # Questão 10
+Dada a sequência de Fibonacci definida interativamente como segue:
+
+Se n=0, então 0
+
+Se n=1, então 1
+
+Se n=2, então 0 + 1 = 1
+
+Se n=3, então 1 + 1 = 2
+
+Se n=4, então 1 + 2 = 3
+
+etc.
+
+Implemente a função acima interativamente com sua escolha (ou a escolha do seu instrutor ) de qualquer dos seguintes:
+
+## Opção a
+```asm
+.while
+```
+
+### Resposta:
+
+```asm
+
+```
