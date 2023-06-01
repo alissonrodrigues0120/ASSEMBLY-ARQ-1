@@ -267,6 +267,7 @@ do02: nop
      ;body of nested loop
      loop do02
 endw02: nop
+     mov ecx, tempecx
      loop do01
 endw01: nop
 ```
