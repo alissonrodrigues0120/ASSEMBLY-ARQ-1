@@ -59,10 +59,65 @@ mov ebx,2
 Incorreto, não existe a diretiva ".do".
 
 # Questão 2
-Implemente o último segmento de código na seção 5.1 sem usar diretivas e usar apenas condicionais e jumps incondicionais.
+Implemente o último segmento de código na seção 5.1 sem está usando diretivas e use apenas condicionais e jumps incondicionais.
 
 ### Resposta:
 
 ```asm
-
+ ans, 0
+if01: cmp x, 0
+      je endif00
+      mov ecx, 1
+while01: cmp ecx, y
+         jge  endw00 
+         mov eax, ans
+         add eax, x
+         mov ans, eax
+         inc ecx
+endw00:  nop
+         mov i, ecx
+endif00: nop    
 ```
+# Questão 3
+Dados os seguintes loops while implementados usando condicionais e jumps incondcionais, indique quantas vezes o corpo de cada loop será executado:
+
+## Opção a
+```asm
+         mov i,2 
+while04: cmp i,8 
+         jge endwhile04 
+         ; body of loop
+         add i,2 
+         jmp while04
+endwhile04: nop 
+```
+### Resposta:
+três vezes.
+
+
+## Opção b
+```asm
+        mov k,0 
+repeat05: nop 
+         ; body of loop
+          add k,3 
+          cmp k,3 
+          jl repeat05
+endrepeat05: nop
+```
+### Resposta:
+uma vez.
+
+## Opção C
+```asm
+       mov j,1 
+while06: cmp j,0 
+         jg endwhile06 
+         ; body of loop
+         inc j 
+         jmp while06
+endwhile06: nop
+```
+
+### Resposta:
+nenhuma vez.
