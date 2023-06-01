@@ -252,3 +252,21 @@ do01: nop
       jg do01
 endw01: nop
 ```
+
+# Questão 8
+Implemente o último segmento de código na seção 5.5 usando a instrução loop em vez das diretivas .repeat e .untilcxz.
+
+### Resposta:
+
+```asm
+    mov ecx, 2
+do01: nop
+     mov tempecx, ecx
+     mov ecx, 3
+do02: nop
+     ;body of nested loop
+     loop do02
+endw02: nop
+     loop do01
+endw01: nop
+```
