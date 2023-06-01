@@ -277,11 +277,11 @@ Dada a função fatorial (n!) definida interativamente como segue:
 
 Se n=0 ou n=1, então 1
 
-Se n=2, então 1*2 = 2
+Se n=2, então 1 * 2 = 2
 
-Se n=3, então 1*2*3 = 6
+Se n=3, então 1 * 2 * 3 = 6
 
-Se n=4, então 1*2*3*4 = 24
+Se n=4, então 1 * 2 * 3 * 4 = 24
 
 etc.
 
@@ -293,38 +293,7 @@ Implemente a função acima interativamente com sua escolha (ou a escolha de seu
 ```
 
 ### Resposta:
-```asm
-.686
-.model flat, c
-.stack 100h
-
-scanf PROTO arg2:Ptr Byte, inputlist:VARARG
-printf PROTO arg1:Ptr Byte, printlist:VARARG
-
-.data
-n sdword ?
-msgfmt byte "%s", 0Ah, 0
-msg1 byte "valor de n: ", 0
-msgfmt2 byte "%s%d", 0Ah, 0
-msginput byte "%d", 0
-
-.code
-main proc
-     INVOKE printf, ADDR msgfmt, ADDR msg1
-     INVOKE scanf, ADDR msginput, ADDR n
-     mov eax, 1
-     .while (n!=0)
-     imul n
-     dec n
-     .endw
-     mov n, eax
-
-     INVOKE printf, ADDR msgfmt2, ADDR msg1, n
-     ret
-main endp
-     end
-
-```
+[Resposta da opção A da questão 9](https://github.com/alissonrodrigues0120/ASSEMBLY-ARQ-1/blob/main/lista5/Questao_9_a.asm)
 
 ## Opção b
 ```asm
@@ -332,78 +301,14 @@ main endp
 ```
 
 ### Resposta:
-```asm
-.686
-.model flat, c
-.stack 100h
-
-scanf PROTO arg2:Ptr Byte, inputlist:VARARG
-printf PROTO arg1:Ptr Byte, printlist:VARARG
-
-.data
-n sdword ?
-msgfmt byte "%s", 0Ah, 0
-msg1 byte "valor de n: ", 0
-msgfmt2 byte "%s%d", 0Ah, 0
-msginput byte "%d", 0
-
-.code
-main proc
-     INVOKE printf, ADDR msgfmt, ADDR msg1
-     INVOKE scanf, ADDR msginput, ADDR n
-     mov eax, 1
-     .repeat
-     imul n
-     dec n
-     .until(n==0)
-     mov n, eax
-
-     INVOKE printf, ADDR msgfmt2, ADDR msg1, n
-     ret
-main endp
-     end
-
-```
+[Resposta da opção B da questão 9](https://github.com/alissonrodrigues0120/ASSEMBLY-ARQ-1/blob/main/lista5/Questao_9_b.asm)
 ## Opção c
 ```asm
 .repeat - .untilcxz
 ```
 
 ### Resposta:
-
-```asm
-.686
-.model flat, c
-.stack 100h
-
-scanf PROTO arg2:Ptr Byte, inputlist:VARARG
-printf PROTO arg1:Ptr Byte, printlist:VARARG
-
-.data
-n sdword ?
-msgfmt byte "%s", 0Ah, 0
-msg1 byte "valor de n: ", 0
-msgfmt2 byte "%s%d", 0Ah, 0
-msginput byte "%d", 0
-
-.code
-main proc
-     INVOKE printf, ADDR msgfmt, ADDR msg1
-     INVOKE scanf, ADDR msginput, ADDR n
-     mov eax, 1
-     mov ecx, n
-     .repeat
-     imul n
-     dec n
-     .untilcxz
-     mov n, eax
-
-     INVOKE printf, ADDR msgfmt2, ADDR msg1, n
-     ret
-main endp
-     end
-
-```
+[Resposta da opção C da questão 9](https://github.com/alissonrodrigues0120/ASSEMBLY-ARQ-1/blob/main/lista5/Questao_9_c.asm)
 
 # Questão 10
 Dada a sequência de Fibonacci definida interativamente como segue:
@@ -429,6 +334,21 @@ Implemente a função acima interativamente com sua escolha (ou a escolha do seu
 
 ### Resposta:
 
-```asm
+[Resposta da opção A da questão 10](https://github.com/alissonrodrigues0120/ASSEMBLY-ARQ-1/blob/main/lista5/Questao_10_a.asm)
 
+## Opção b
+```asm
+.repeat - .until
 ```
+
+### Resposta:
+[Resposta da opção B da questão 10](https://github.com/alissonrodrigues0120/ASSEMBLY-ARQ-1/blob/main/lista5/questao_10_b.asm)
+
+## Opção c
+
+```asm
+.repeat - .untilcxz
+```
+
+### Resposta:
+[Resposta da opção C da questão 10](https://github.com/alissonrodrigues0120/ASSEMBLY-ARQ-1/blob/main/lista5/Questao_10_c.asm)
