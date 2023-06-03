@@ -1,3 +1,7 @@
+;compilar:
+;ml /Cx /coff Questao_9_c.asm /link /SUBSYSTEM:console /out:Questao_9_c.exe kernel32.lib legacy_stdio_definitions.lib msvcrt.lib
+
+
 .686
 .model flat, c
 .stack 100h
