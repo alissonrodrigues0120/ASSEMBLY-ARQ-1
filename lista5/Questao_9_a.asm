@@ -1,5 +1,5 @@
 ;compilar:
-;ml /Cx /coff questao_9_a.asm /link /SUBSYSTEM:console /out:questao_9_a.exe kernel32.lib legacy_stdio_definitions.lib msvcrt.lib
+;ml /Cx /coff Questao_9_a.asm /link /SUBSYSTEM:console /out:Questao_9_a.exe kernel32.lib legacy_stdio_definitions.lib msvcrt.lib
 
 .686
 .model flat, c
