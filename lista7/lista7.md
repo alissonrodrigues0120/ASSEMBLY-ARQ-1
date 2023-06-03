@@ -73,5 +73,19 @@ Incorreto, pois não existe a instrução "ifne".
 # Questão 2
 Escreva um procedimento para implementar a função fatorial como definido na seção de exercícios do capítulo 5.
 
+### Resposta:
+[Resposta da questão 2](https://github.com/alissonrodrigues0120/ASSEMBLY-ARQ-1/blob/main/lista7/question2.asm)
+
+# Questão 3
+Escreva um procedimento para implementar os números de Fibonacci como definido na seção de exercícios do capítulo 5.
+
+### Resposta:
+[Resposta da questão 3](https://github.com/alissonrodrigues0120/ASSEMBLY-ARQ-1/blob/main/lista7/question3.asm)
+
+# Questão 4
+Escreva uma macro para implementar a função fatorial como definida na seção de exercícios do capítulo 5.
+
+### Resposta:
+[Resposta da questão 4](https://github.com/alissonrodrigues0120/ASSEMBLY-ARQ-1/blob/main/lista7/question4.asm)
 
 
