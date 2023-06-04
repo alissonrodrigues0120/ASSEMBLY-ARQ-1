@@ -99,5 +99,32 @@ Usando montagem condicional, modifique a macro MULTACC definida neste capítulo 
 
 ### Resposta:
 
+```asm
+MULTACC         macro operand
+                push ebx 
+                push ecx
+                mov ebx,eax 
+                mov ecx,operand 
+                    ifidn <operand>, <0>
+                     mov eax, 0
+                endif
+
+                ifdif <operand>,   <1> 
+                        mov eax, 0
+                        if operand LT 0 
+                        neg ecx 
+                        endif
+                        .while ecx >0
+                        add eax,ebx
+                        dec ecx 
+                        .endw
+                        if operand LT 0 
+                        neg eax 
+                        endif
+                        endif    
+                pop ecx 
+                pop ebx
+                endm
+```
 
 
