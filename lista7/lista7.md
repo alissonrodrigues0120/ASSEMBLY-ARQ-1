@@ -88,4 +88,16 @@ Escreva uma macro para implementar a função fatorial como definida na seção 
 ### Resposta:
 [Resposta da questão 4](https://github.com/alissonrodrigues0120/ASSEMBLY-ARQ-1/blob/main/lista7/question4.asm)
 
+# Questão 5
+Escreva uma macro para implementar os números de Fibonacci conforme definido na seção de exercícios do capítulo 5.
+
+### Resposta:
+[Resposta da questão 5](https://github.com/alissonrodrigues0120/ASSEMBLY-ARQ-1/blob/main/lista7/question5.asm)
+
+# Questão 6
+Usando montagem condicional, modifique a macro MULTACC definida neste capítulo para não apenas eliminar o loop redundante, mas também não gerar a própria instrução de loop caso o multiplicador no operando seja 0 e a resposta seja 0, ou quando for 1 e a resposta é apenas o valor no acumulador. (Dica: use a macro power como exemplo.)
+
+### Resposta:
+
+
 
