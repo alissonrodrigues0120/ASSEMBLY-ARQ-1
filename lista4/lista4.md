@@ -1,4 +1,7 @@
 # Questão 1
+
+> Correção: 0,3.
+
 Indique se as seguintes declarações estão sintaticamente corretas ou incorretas no MASM. Se incorreta, indique o que há de errado com a afirmação:
 
 ## Opção a 
@@ -43,6 +46,9 @@ endif01: nop
 Errado, não é possível realizar a instrução cmp com duas memórias.
 
 # Questão 2
+
+> Correção: 0,3
+
 Usando Diretivas MASM, escreva um segmento de código em linguagem Assembly para a implementação seguinte:
 ```c
 if ( a > b )
@@ -87,6 +93,9 @@ else
  ```
 
 # Questão 3
+
+> Correção: 0,3
+
 Converter a seguinte estrutura de seleção em C para um correspondente segmento de código de linguagem Assembly. Não use as diretivas MASM, mas em vez disso use apenas comparadores , jumps e os apropriados rótulos (dica: no problema B, use as regras de De Morgan):
 
 ## Opção a
@@ -176,6 +185,9 @@ endif01: nop
 ```
 
 # Questão 4
+
+> Correção: 0,3
+
 Dado o exemplo da estrutura if-then-else-if abordado no problema 2, re-implemente isso usando estrutura if-then-if aninhado.
 
 ## Opção a
@@ -245,6 +257,9 @@ endif00: nop
 
 ```
 # Questão 5
+
+> Correção: 0,1. Se number for 0, nada será executado.
+
 Implemente a seguinte declaração do switch C, que não tem um padrão de declaração, usando comparadores, jumps, e rótulos apropriados. Se number não estiver contido de 0 a 3, então o valor de count não deve mudar
 
 ```c

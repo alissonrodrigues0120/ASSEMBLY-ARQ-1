@@ -1,3 +1,4 @@
+; correção: 0,5
 ;compilar:
 ;ml /Cx /coff questao_6.asm /link /SUBSYSTEM:console /out:questao_6.exe kernel32.lib legacy_stdio_definitions.lib msvcrt.lib
 
