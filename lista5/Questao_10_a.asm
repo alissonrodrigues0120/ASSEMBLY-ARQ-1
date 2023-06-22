@@ -1,5 +1,6 @@
-;compilar:
-;ml /Cx /coff Questao_10_a.asm /link /SUBSYSTEM:console /out:Questao_10_a.exe kernel32.lib legacy_stdio_definitions.lib msvcrt.lib
+; Correção: 1,0
+; compilar:
+; ml /Cx /coff Questao_10_a.asm /link /SUBSYSTEM:console /out:Questao_10_a.exe kernel32.lib legacy_stdio_definitions.lib msvcrt.lib
 
 
 .686

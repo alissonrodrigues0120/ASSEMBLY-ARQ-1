@@ -1,4 +1,7 @@
 # Questão 1
+
+> Correção: 0,1
+
 Dadas as seguintes declarações da linguagem Assembly, indique se elas estão sintaticamente corretas ou incorretas. Se incorreta, indique o que está errado com a declaração.
 
 ## Opção a
@@ -123,6 +126,9 @@ endwhile06: nop
 nenhuma vez.
 
 # Questão 4
+
+> Correção: 0,1
+
 Implemente as diretivas .repeat e .until no final da seção 5.2 usando apenas instruções de comparar e jump, juntamente com os nomes dos rótulos apropriados.
 
 ### Resposta:
@@ -143,6 +149,9 @@ endif01:  nop
 ```
 
 # Questão 5
+
+> Correção: 0,1
+
 Implemente a divisão sem sinal (similar à instrução div) usando subtração repetitiva, com sua escolha (ou escolha do seu instrutor) de qualquer dos seguintes (começar com o dividendo em eax e o divisor em ebx, então o lugar do quociente em eax e o resto em edx. Nota: Não cuide com relação a divisão por zero ou números negativos):
 
 ## Opção a
@@ -192,6 +201,9 @@ inc eax
 ```
 
 # Questão 6
+
+> Correção: 0,1
+
 Implemente o seguinte segmento em C usando as diretivas .repeat e .untilcxz. E se o valor de n for 0 ou negativo? Seu segmento de código ainda funciona apropriadamente? Como esse problema pode ser corrigido? 
 
 ```c
@@ -216,11 +228,14 @@ Quando for negativo, irá executar o loop mas o resultado de sum ficará negativ
 
 
 # Questão 7
+
+> Correção: 0,1. _sum_ não é atualizado.
+
 Implemente o seguinte loop do-while primeiro usando as diretivas .repeat - .until, e em seguida, usando apenas comparadores, condicionais e jumps incondicionais:
 
 ```c
 i=10;
-sum 0;
+sum = 0;
 do {
     sum sum+i;
     i=i-2;
@@ -254,6 +269,9 @@ endw01: nop
 ```
 
 # Questão 8
+
+> Correção: 0,2.
+
 Implemente o último segmento de código na seção 5.5 usando a instrução loop em vez das diretivas .repeat e .untilcxz.
 
 ### Resposta:
