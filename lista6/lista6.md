@@ -1,6 +1,8 @@
 # Questão 1
 Dada as seguintes declarações de linguagem Assembly, indique se elas estão sintaticamente corretas ou incorretas. Se incorreto, indique o que está errado com a declaração:
 
+> Correção: 0,5
+
 ## Opção a
 ```asm
 or eax, ebx
@@ -67,6 +69,8 @@ Incorreto, não existe a instrução "lol". A instrução usada para rotação �
 
 # Questão 2
 Dada as seguintes instruções aritméticas em C, implemente elas usando as instruções shift aritméticas, onde possível:
+
+> Correção: 0,5
 
 ## Opção a
 ```c
