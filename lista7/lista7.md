@@ -1,4 +1,7 @@
 # Questão 1
+
+> Correção: 0,1
+
 Dadas as seguintes instruções em linguagem assembly e assumindo que os locais e rótulos de memória foram declarados corretamente, indique se eles estão sintaticamente corretos ou incorretos. Se incorreta, indique o que há de errado com a afirmação:
 
 ## Opção a
