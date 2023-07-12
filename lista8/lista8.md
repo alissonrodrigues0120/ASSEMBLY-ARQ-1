@@ -1,4 +1,7 @@
 # Questão 1
+
+> Correção: 0,5
+
 Given the following assembly language statements, indicate whether they are syntactically correct or incorrect. If incorrect, indicate what is wrong with the
 statement:
 
@@ -52,6 +55,9 @@ mov [esi], [edi]
 Incorreto, pois é memória pra memória.
 
 # Questão 2:
+
+> Correção: 0,5
+
 Given the contents of the following memory location, what is stored in the eax
 register at the end of each segment?
 
