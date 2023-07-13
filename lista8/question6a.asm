@@ -1,5 +1,5 @@
 ;Compile:
-;   ml /Cx /coff SelectionSort.asm /link /SUBSYSTEM:console  /out:SelectionSort.exe kernel32.lib legacy_stdio_definitions.lib msvcrt.lib
+;   ml /Cx /coff question6a.asm /link /SUBSYSTEM:console  /out:question6a.exe kernel32.lib legacy_stdio_definitions.lib msvcrt.lib
 ;   
 .686
 .model  flat, c
