@@ -126,9 +126,111 @@ imul [esi]
 ```
 
 ### Resposta:
+
 14
 
 # Questão 3:
 Implement the following C instructions using assembly language. Assume all
 variables are declared as sdword:
 
+## Opção a:
+```c
+num[0] = 1;
+```
+
+### Resposta:
+```asm
+mov num+0,1 
+```
+## Opção b:
+```c
+x[1]=x[2];
+```
+### Resposta
+```asm
+mov eax, x+4
+mov x+8, eax
+```
+## Opção c:
+```c
+y[i+1] = y[i];
+```
+### Resposta:
+```asm
+mov eax, y[ebx] 
+mov y[ebx + 4],eax
+```
+
+## Opção d:
+```c
+z[i] = z[j];
+```
+### Resposta:
+```asm
+mov eax, z[ebx]
+mov z[ecx], eax
+```
+# Questão 4
+Given the declarations below, indicate what would be stored in the eax register
+for each of the following instructions. Note that oarray is of type sword, not
+sdword (hint: see Chap. 1):
+
+```asm
+narray sdword 1,2,3,4,5
+marray sdword 10 dup(?)
+oarray sword 15,20,25
+```
+## Opção a:
+
+```asm
+mov eax, lengthof narray 
+```
+
+### Resposta:
+5
+## Opção b:
+
+```asm
+mov eax, sizeof narray
+```
+### Resposta:
+20
+
+## Opção c:
+
+```asm
+mov eax, lengthof marray
+```
+### Resposta:
+10
+
+## Opção d:
+
+```asm
+mov eax, sizeof marray
+```
+
+### Resposta:
+40
+
+## opção e:
+
+```asm
+mov eax, lengthof oarray
+```
+### Resposta:
+3
+
+## Opção f:
+
+```asm
+mov eax, sizeof oarray
+```
+### Resposta:
+12
+
+# Questão 5:
+Write both the C code and the assembly code to transfer the contents of a
+20-element array of integers to a second 20-element array of integers.
+
+### Resposta:
