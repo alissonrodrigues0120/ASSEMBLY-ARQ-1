@@ -1,3 +1,7 @@
+; compile:
+; ml /Cx /coff question5.asm /link /SUBSYSTEM:console /out:question5.exe kernel32.lib legacy_stdio_definitions.lib msvcrt.lib
+;
+
 .686
 .model flat, c
 .stack 100h
