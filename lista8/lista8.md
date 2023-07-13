@@ -264,4 +264,5 @@ if there is not a swap on the previous pass through the array, the array is in
 order and there is no need to make any subsequent passes through the array.
 
 ### Resposta:
-
+[código em Assembly](https://github.com/alissonrodrigues0120/ASSEMBLY-ARQ-1/blob/main/lista8/question6b.asm)
+[código em c](https://github.com/alissonrodrigues0120/ASSEMBLY-ARQ-1/blob/main/lista8/question6b.c)
