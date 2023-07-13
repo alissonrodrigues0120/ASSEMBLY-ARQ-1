@@ -253,4 +253,15 @@ version of the bubble sort which compares every element of every pass
 through the array whether there was a swap on the previous pass or not.
 
 ### Resposta:
+[código em Assembly](https://github.com/alissonrodrigues0120/ASSEMBLY-ARQ-1/blob/main/lista8/question6a.asm)
+
+[Código em C](https://github.com/alissonrodrigues0120/ASSEMBLY-ARQ-1/blob/main/lista8/question6a.c)
+
+## Opção b:
+ First write the C code for the modified version of the bubble sort and then
+write the modified version in assembly language. With the modified version,
+if there is not a swap on the previous pass through the array, the array is in
+order and there is no need to make any subsequent passes through the array.
+
+### Resposta:
 
