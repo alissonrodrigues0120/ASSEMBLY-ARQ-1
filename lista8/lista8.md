@@ -234,3 +234,23 @@ Write both the C code and the assembly code to transfer the contents of a
 20-element array of integers to a second 20-element array of integers.
 
 ### Resposta:
+
+[código em Assembly](https://github.com/alissonrodrigues0120/ASSEMBLY-ARQ-1/blob/main/lista8/question5.asm)
+
+
+[código em c](https://github.com/alissonrodrigues0120/ASSEMBLY-ARQ-1/blob/main/lista8/question5.c)
+
+
+# Questão 6:
+Just as there is a simple and modified version of the selection sort, so is there
+both a simple version and a modified version of the bubble sort. The simple
+version in C is the same length as the simplified version of the selection sort
+presented in Sect. 8.6
+
+## Opção a:
+Write both the C code and the assembly code to implement the simplified
+version of the bubble sort which compares every element of every pass
+through the array whether there was a swap on the previous pass or not.
+
+### Resposta:
+
