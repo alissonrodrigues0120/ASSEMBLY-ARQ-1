@@ -1,4 +1,7 @@
 # Questão 1
+
+> Correção: 0,5
+
 Given the following assembly language statements, indicate whether they are
 syntactically correct or incorrect. If incorrect, indicate what is wrong with the
 statement:
@@ -48,6 +51,8 @@ Incorreto, o correto é lodsb
 
 # Questão 2
 
+> Correção: 0,2.
+
 Given the following declarations, walk through the following code segments
 and indicate the contents of the ecx, esi, edi, and al registers upon completion of each segment. You may assume that string1 starts at memory
 location 100 and string2 at memory location 105. With problem D, in
@@ -76,6 +81,8 @@ Lodsb
 ### Resposta:
 ecx = undefined, esi = 103, edi = undefined, al = "d"
 
+> Correção: _esi_ é 104.
+
 ## Opção c
 ```asm
 mov ecx,5
@@ -97,6 +104,8 @@ repne cmpsb
 ### Resposta:
 ecx = 5, esi = 100, edi = 105, al = undefined string2 = "abcyx"
 
+> Correção: _ecx_ é 4.
+
 ## Opção e
 ```asm
 lea edi,string2
@@ -105,6 +114,9 @@ stosb
 ```
 ### Resposta:
 ecx = undefined, esi = undefined, edi = 105, al = "a"
+
+> Correção: _edi_ é 106.
+
 
 # Questão 3
 Using the esi and edi registers and a.repeat-untilcxz loop, determine

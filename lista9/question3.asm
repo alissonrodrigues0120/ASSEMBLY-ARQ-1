@@ -1,5 +1,5 @@
 
-
+; Correção: 1,0.
 ;
 ;   Compilar:
 ;   ml /Cx /coff question3.asm /link /SUBSYSTEM:console /out:question3.exe kernel32.lib legacy_stdio_definitions.lib msvcrt.lib
@@ -23,7 +23,7 @@ vetor   byte "123456789", 0
 num     sdword 10
 
 
-stringone  byte "rrrraarrrr laaaaaaaal teeeeeeeet truuuuuurt Aventurese Revolucion Abastecido Inexplicável Fraternida Contrário", 0
+stringone  byte "rrrraarrrr rrrraarrrr rrrraarrrr rrrraarrrr rrrraarrrr rrrraarrrr rrrraarrrr rrrraarrrr rrrraarrrr rrrraarrrr", 0
 
 
 .code
