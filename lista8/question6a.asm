@@ -6,7 +6,7 @@
 .stack  100h
 printf PROTO arg1:Ptr Byte, printlist:VARARG
 scanf  PROTO arg2:Ptr Byte, inputlist:VARARG
-          .data
+.data
 msg1fmt byte  0Ah, "%s", 0
 msg2fmt byte  "%s", 0
 msg3fmt byte    0Ah, "%s", 0Ah, 0Ah, 0
