@@ -132,3 +132,12 @@ Write the equivalent assembly language code segment for the C program in
 Sect. 10.7.3 (which uses type long double).
 
 ### Resposta:
+[Resposta da questão 4](https://github.com/alissonrodrigues0120/ASSEMBLY-ARQ-1/blob/main/lista10/question4.asm)
+
+# Questão 5
+Given the code using inline assembly in Sect. 10.7.4, rewrite it to work with
+float and long double types (Hint: For type float, see Sect. 10.7.1).
+
+### Resposta:
+[Resposta 1](https://github.com/alissonrodrigues0120/ASSEMBLY-ARQ-1/blob/main/lista10/question5one.c)
+[Resposta 2](https://github.com/alissonrodrigues0120/ASSEMBLY-ARQ-1/blob/main/lista10/question5two.c)
