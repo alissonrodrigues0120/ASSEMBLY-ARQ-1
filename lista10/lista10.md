@@ -149,3 +149,7 @@ float and long double types (Hint: For type float, see Sect. 10.7.1).
 ### Resposta:
 [Resposta 1](https://github.com/alissonrodrigues0120/ASSEMBLY-ARQ-1/blob/main/lista10/question5one.c)
 [Resposta 2](https://github.com/alissonrodrigues0120/ASSEMBLY-ARQ-1/blob/main/lista10/question5two.c)
+
+# Questão 6
+
+> Correção: 0,0
