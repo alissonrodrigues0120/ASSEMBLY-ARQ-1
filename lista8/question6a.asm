@@ -1,3 +1,4 @@
+; Correção: 1,0.
 ;Compile:
 ;   ml /Cx /coff question6a.asm /link /SUBSYSTEM:console  /out:question6a.exe kernel32.lib legacy_stdio_definitions.lib msvcrt.lib
 ;   

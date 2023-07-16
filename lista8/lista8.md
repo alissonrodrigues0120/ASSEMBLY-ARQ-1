@@ -130,6 +130,9 @@ imul [esi]
 14
 
 # Questão 3:
+
+> Correção: 0,3
+
 Implement the following C instructions using assembly language. Assume all
 variables are declared as sdword:
 
@@ -162,6 +165,9 @@ mov y[ebx + 4],eax
 ```
 
 ## Opção d:
+
+> Correção: Quais os valores iniciais de _ebx_ e _ecx_?
+
 ```c
 z[i] = z[j];
 ```
@@ -171,6 +177,9 @@ mov eax, z[ebx]
 mov z[ecx], eax
 ```
 # Questão 4
+
+> Correção: 0,5
+
 Given the declarations below, indicate what would be stored in the eax register
 for each of the following instructions. Note that oarray is of type sword, not
 sdword (hint: see Chap. 1):
