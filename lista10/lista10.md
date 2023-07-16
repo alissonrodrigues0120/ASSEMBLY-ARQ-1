@@ -153,3 +153,7 @@ float and long double types (Hint: For type float, see Sect. 10.7.1).
 # Questão 6
 
 > Correção: 0,0
+
+# Questão 7
+
+> Correção: 0,0
