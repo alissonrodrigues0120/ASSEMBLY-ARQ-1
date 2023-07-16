@@ -1,3 +1,4 @@
+// Correção: 0,3. No caso do long double, você não adaptou a string de formatação.
 #include <stdio.h>
 
 int main() {
