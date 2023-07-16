@@ -1,4 +1,7 @@
 # Questão 1
+
+> Correção: 0,5
+
 Given the following variables, what are the results in the variable z for each of
 the following code segments?
 
@@ -58,6 +61,9 @@ fistp z
 10
 
 # Questão 2
+
+> Correção: 0,3
+
 Convert the following C-like arithmetic instructions into post-fix form and then
 write the corresponding assembly language instructions. Assume that all variables are of type real8.
 
@@ -112,6 +118,8 @@ data = i * j + (k / (m – n));
 ```
 
 ### Resposta:
+
+> Correção: Aqui, pela ordem de avaliação, o _i_ e _j_ seria multiplicados primeiro. 
 
 ```asm
 fld k
